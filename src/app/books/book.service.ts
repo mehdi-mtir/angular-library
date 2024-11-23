@@ -15,6 +15,16 @@ export class BookService {
   constructor() { }
 
   getBooks() : Book[]{
-    return this.books;
+    return [...this.books];
+  }
+
+  addBook(title : string, author : string, price : number){
+    const newBook = new Book(
+      this.books[this.books.length - 1].id + 1,
+      title,
+      author,
+      price
+    );
+    this.books = [...this.books, newBook]
   }
 }
