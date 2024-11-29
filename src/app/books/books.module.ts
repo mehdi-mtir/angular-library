@@ -6,6 +6,7 @@ import { BooksRoutingModule } from './books-routing.module';
 import { BookListComponent } from './book-list/book-list.component';
 import { BookAddComponent } from './book-add/book-add.component';
 import { BookEditComponent } from './book-edit/book-edit.component';
+import { BooksStatsComponent } from './books-stats/books-stats.component';
 
 
 
@@ -13,7 +14,8 @@ import { BookEditComponent } from './book-edit/book-edit.component';
   declarations: [
     BookListComponent,
     BookAddComponent,
-    BookEditComponent
+    BookEditComponent,
+    BooksStatsComponent
   ],
   imports: [
     CommonModule,
